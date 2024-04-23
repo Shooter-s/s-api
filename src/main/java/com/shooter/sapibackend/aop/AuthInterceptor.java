@@ -42,7 +42,7 @@ public class AuthInterceptor {
      */
     @Around("@annotation(authCheck)") // 对于使用该注解的方法生效
     public Object doInterceptor(ProceedingJoinPoint joinPoint, AuthCheck authCheck) throws Throwable {
-        //拿到角色信息admin
+        //拿到角色信息(admin)
         String mustRole = authCheck.mustRole();
         //拿到request
         RequestAttributes requestAttributes = RequestContextHolder.currentRequestAttributes();
