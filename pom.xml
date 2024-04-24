@@ -85,6 +85,12 @@
             <groupId>org.springframework.session</groupId>
             <artifactId>spring-session-data-redis</artifactId>
         </dependency>
+        <!-- sapi client sdk -->
+        <dependency>
+            <groupId>com.shooter</groupId>
+            <artifactId>sapi-client-sdk</artifactId>
+            <version>0.0.1</version>
+        </dependency>
     </dependencies>
 
     <build>

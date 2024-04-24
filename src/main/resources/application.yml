@@ -51,4 +51,7 @@ springdoc:
     - group: 'default'
       paths-to-match: '/**'
       packages-to-scan: com.shooter.sapibackend.controller
-
+sapi:
+  client:
+    access-key: shooter
+    secret-key: abcdefg
