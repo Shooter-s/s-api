@@ -1,0 +1,28 @@
+server:
+  port: 8083
+
+# gateway rules
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: api_route
+          uri: http://localhost:8082
+          predicates:
+            - Path=/api/**
+
+# log level
+logging:
+  level:
+    org.springframework.cloud.gateway: TRACE
+
+dubbo:
+  application:
+    name: dubbo-springboot-demo-provider
+    qosEnable: false
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    id: nacos-registry
+    address: nacos://localhost:8848
