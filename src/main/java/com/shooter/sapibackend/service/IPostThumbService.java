@@ -2,7 +2,7 @@ package com.shooter.sapibackend.service;
 
 import com.shooter.sapibackend.model.po.PostThumb;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.shooter.sapibackend.model.po.User;
+import com.shooter.sapicommon.model.entity.User;
 
 /**
  * <p>

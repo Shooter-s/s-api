@@ -6,7 +6,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.shooter.sapibackend.model.po.Post;
 import com.shooter.sapibackend.model.po.PostFavour;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.shooter.sapibackend.model.po.User;
+import com.shooter.sapicommon.model.entity.User;
 
 /**
  * <p>

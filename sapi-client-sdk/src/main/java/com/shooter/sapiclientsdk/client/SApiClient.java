@@ -25,6 +25,8 @@ import static com.shooter.sapiclientsdk.utils.SignUtil.genSign;
  */
 public class SApiClient {
 
+    private static final String GATEWAY_HOST = "http://localhost:8083";
+
     private String accessKey;
 
     private String secretKey;
@@ -37,7 +39,7 @@ public class SApiClient {
     public String getNameByGet(String name) {
         Map<String, Object> paramMap = new HashMap<>();
         paramMap.put("name",name);
-        String result = HttpUtil.get("http://localhost:8082/api/name/", paramMap);
+        String result = HttpUtil.get(GATEWAY_HOST + "/api/name/", paramMap);
         System.out.println(result);
         return result;
     }
@@ -45,7 +47,7 @@ public class SApiClient {
     public String getNameByPost(String name){
         Map<String, Object> paramMap = new HashMap<>();
         paramMap.put("name",name);
-        String result = HttpUtil.post("http://localhost:8082/api/name/", paramMap);
+        String result = HttpUtil.post(GATEWAY_HOST + "/api/name/", paramMap);
         System.out.println(result);
         return result;
     }
@@ -65,7 +67,7 @@ public class SApiClient {
 
     public String getUserNameByPost(User user){
         String json = JSONUtil.toJsonStr(user);
-        HttpResponse httpResponse = HttpRequest.post("http://localhost:8082/api/name/user")
+        HttpResponse httpResponse = HttpRequest.post(GATEWAY_HOST + "/api/name/user")
                 // 发送请求另外额外加上请求头，为什么不把ak/sk放到url中，因为有长度限制
                 .addHeaders(getHeaderMap(json))
                 .body(json)

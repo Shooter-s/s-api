@@ -1,7 +1,7 @@
 package com.shooter.sapibackend.mapper;
 
-import com.shooter.sapibackend.model.po.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.shooter.sapicommon.model.entity.User;
 
 /**
  * <p>

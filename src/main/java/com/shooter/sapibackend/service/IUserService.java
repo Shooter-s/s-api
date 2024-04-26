@@ -3,10 +3,10 @@ package com.shooter.sapibackend.service;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.shooter.sapibackend.model.dto.user.UserQueryRequest;
-import com.shooter.sapibackend.model.po.User;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.shooter.sapibackend.model.vo.LoginUserVO;
 import com.shooter.sapibackend.model.vo.UserVO;
+import com.shooter.sapicommon.model.entity.User;
 import jakarta.servlet.http.HttpServletRequest;
 
 import java.util.List;

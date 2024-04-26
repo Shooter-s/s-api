@@ -55,3 +55,15 @@ sapi:
   client:
     access-key: shooter
     secret-key: abcdefg
+
+
+dubbo:
+  application:
+    name: dubbo-springboot-demo-consumer
+    qosEnable: false
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    id: nacos-registry
+    address: nacos://localhost:8848
